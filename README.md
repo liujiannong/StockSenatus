@@ -9,13 +9,13 @@ utils — 存放utils文件，可require引入
 
 ### 项目截图：
     
-<img src="https://github.com/liujiannong/StockSenatus/tree/master/image/StockCalendar.PNG" width="320px" style="display:inline;">
+<img src="https://github.com/liujiannong/StockSenatus/blob/master/image/StockCalendar.PNG" width="320px" style="display:inline;">
 
-<img src="https://github.com/liujiannong/StockSenatus/tree/master/image/StockDiagnose.PNG" width="320px" style="display:inline;">
+<img src="https://github.com/liujiannong/StockSenatus/blob/master/image/StockDiagnose.PNG" width="320px" style="display:inline;">
 
-<img src="https://github.com/liujiannong/StockSenatus/tree/master/image/StockLicaishi.PNG" width="320px" style="display:inline;">
+<img src="https://github.com/liujiannong/StockSenatus/blob/master/image/StockLicaishi.PNG" width="320px" style="display:inline;">
 
-<img src="https://github.com/liujiannong/StockSenatus/tree/master/image/StockPatres.PNG" width="320px" style="display:inline;">
+<img src="https://github.com/liujiannong/StockSenatus/blob/master/image/StockPatres.PNG" width="320px" style="display:inline;">
 
 
 ### 开发环境：
