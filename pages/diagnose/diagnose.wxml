@@ -1,0 +1,25 @@
+<loading hidden="{{loadingHidden}}">正在加载...</loading>
+<view class="stockInfo">
+  <view class="inputStock">
+      <input type="number" style="width:80%;border:1px solid green;border-radius: 5px;" maxlength="6" placeholder="请输入股票代码" placeholder-style="color: red" bindinput="setStockID" />
+      <button type="primary" size="mini" bindtap="queryStockAwards">诊股</button>
+  </view>
+  <view wx:if="{{awards.success == true}}">
+    <text class="awardsTitle">{{awards.data.data.result._name}}：{{suggestions[awards.data.data.result._bull - 1]}}</text>
+    <text class="common-text-style">短期趋势：{{awards.data.data.result._short}}</text>
+    <text class="common-text-style">中期趋势：{{awards.data.data.result._mid}}</text>
+    <text class="common-text-style">长期趋势：{{awards.data.data.result._long}}</text>
+  </view>
+  <view wx:if="{{jettons.length > 0}}">
+    <text class="awardsTitle">主力资金动向</text>
+    <text class="common-text-style">{{jettons[0]}}</text>
+    <text class="common-text-style">{{jettons[1]}}</text>
+  </view>  
+</view>
+
+<view class="HSStockInfo" wx:if="{{HSStockInfo != null}}">
+  <text class="HSStockTitle">沪深股市情况</text>
+  <text class="common-text-style">上涨：{{HSStockInfo.zdfb_data.znum}}支，下跌：{{HSStockInfo.zdfb_data.dnum}}支</text>
+  <text class="common-text-style">涨停：{{HSStockInfo.zdt_data.last_zdt.ztzs}}支，跌停：{{HSStockInfo.zdt_data.last_zdt.ztzs}}支</text>
+  <text class="common-text-style">昨日涨停今日收益：{{HSStockInfo.jrbx_data.last_zdf}}%</text>
+</view>

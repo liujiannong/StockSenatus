@@ -1,0 +1,13 @@
+<loading hidden="{{loadingHidden}}">正在加载...</loading>
+<scroll-view scroll-y="true" bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower" style="height: 100%">
+  <block wx:for-items="{{masterList}}">  
+    <view class="masterContainsView" bindtap="queryMasterReport" wx:if="{{index % 3 == 0}}">  <!-- master整体样式-->
+      <block wx:for-items="{{[0, 1, 2]}}" wx:for-index="offset"> <!-- 一行列3个人 -->
+        <view class="masterInfoView" wx:if="{{index + offset < masterList.length}}">       <!-- 单个master样式, logo和name给一个id -->
+          <image id="master-{{masterList[index+offset].id}}" class="masterLogo" src="{{masterList[index+offset].logo}}" />
+          <text id="master-{{masterList[index+offset].id}}" class="masterName">{{masterList[index+offset].name}}</text>
+        </view>     
+      </block>              
+    </view>
+  </block>
+</scroll-view>

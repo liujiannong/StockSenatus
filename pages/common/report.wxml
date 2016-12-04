@@ -1,0 +1,21 @@
+<loading hidden="{{loadingHidden}}">正在加载...</loading>
+<scroll-view scroll-y="true" bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower" style="height: 100%">
+    <!-- 整体item样式 -->
+    <view wx:for-items="{{reportList}}">
+      <view id="{{item.id}}" class="reportView" bindtap="queryReportContent">
+      <!--顶部样式-->
+        <view class="masterView">
+          <image class="masterLogo" src="{{item.masterLogo}}" />
+          <view class="masterInfo">
+            <text class="masterName">{{item.masterName}} {{item.masterCompany}}</text>
+            <text class="postTime">{{item.pTime}}</text>
+          </view>
+        </view>
+        <!-- 中间内容 -->
+        <view class="postInfo">
+          <text class="postTitle">{{item.title}}</text>
+          <text class="postContent">{{item.content}}</text>
+        </view>
+      </view>
+     </view>
+</scroll-view>

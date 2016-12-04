@@ -1,0 +1,82 @@
+/* 整体view样式 */
+.reportView{
+  padding: 15rpx 15rpx 15rpx 15rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  background-color: white;
+}
+
+/* 头部整体样式 */
+.masterView{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 18rpx;
+}
+
+/* 头像 */
+.masterLogo{
+  width: 28pt;
+  height: 28pt;
+  border-radius: 14pt;
+}
+
+/*头部显示名字、公司和报告时间*/
+.masterInfo{
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: column;
+}
+/*名称，含公司*/
+.masterName{
+  font-size: 11pt;
+}
+/*时间*/
+.postTime{
+  font-size: 11pt;
+  color: #b8b2b2;
+  margin-top: 10rpx;
+}
+
+/*中间文字样式*/
+.postInfo{
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: column;
+}
+.postTitle{
+  font-size: 17pt;
+  color:orangered;
+}
+.postContent{
+  font-size: 14pt;
+}
+
+.common-row-style{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 18rpx;
+}
+.common-column-style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18rpx;
+}
+.common-text-style{
+  display: flex;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px; 
+  font-size: 14pt;
+}
+.common_baike{
+  height:1px;
+  width:100%;
+  background:lightgray;
+  overflow:hidden;
+  border-style: inset;
+  border-width: 1px;  
+  /* border-bottom:1px dashed #000;*/ 
+}

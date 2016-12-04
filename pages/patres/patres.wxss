@@ -1,0 +1,32 @@
+/* 头像样式 */
+.masterLogo{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 30rpx;
+}
+
+/*名称样式*/
+.masterName{
+  margin-top: 6rpx;
+  font-size: 36rpx;
+}
+
+/* 一个大咖整体样式 */
+.masterInfoView{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18rpx;
+}
+
+/* 整体view样式 */
+.masterContainsView{
+  padding: 15rpx 15rpx 15rpx 15rpx;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: space-around;
+}

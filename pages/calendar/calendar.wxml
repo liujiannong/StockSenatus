@@ -1,0 +1,14 @@
+<loading hidden="{{loadingHidden}}">正在加载...</loading>
+
+<view class="stockCalendar">
+  <view class="canlendar-style" wx:for-items="{{stockCalendar}}" wx:for-index="i">
+    <text class="canlendar-date">{{stockCalendar[i].date}} {{stockCalendar[i].week}}</text>
+    <view class="canlendar-detail" wx:for-items="{{stockCalendar[i].events}}" wx:for-index="j">
+      <text class="canlendar-event">事件：{{stockCalendar[i].events[j].event}}</text>
+      <text class="canlendar-event" style="color:red" wx:if="{{stockCalendar[i].events[j].concepts!=\"\"}}">影响板块：{{stockCalendar[i].events[j].concepts}}</text>
+      <text class="canlendar-event" wx:else>影响板块：有点多</text>
+      <text class="canlendar-event" style="color:red" wx:if="{{stockCalendar[i].events[j].stocks!=\"\"}}">个股推荐：{{stockCalendar[i].events[j].stocks}}</text>
+      <text class="common_baike" wx:if="{{j < stockCalendar[i].events.length - 1}}"></text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+.stockCalendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.canlendar-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+ }
+.canlendar-date{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px; 
+    height:22pt;
+    line-height:22pt;
+    font-size: 14pt;
+    color: black;
+    background-color:rgba(9, 187, 7, 0.2); 
+    border-style: outset;
+    border-width: 1px;  
+}
+.canlendar-detail{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;    
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.canlendar-event{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px; 
+    margin-bottom:5px;
+    font-size: 14pt;   
+}

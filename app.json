@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/calendar/calendar",  
+    "pages/diagnose/diagnose",
+    "pages/licaishi/licaishi",
+    "pages/patres/patres",
+    "pages/patres/report/report"               
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#eb4f38",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/calendar/calendar",
+        "text": "股市日历",
+        "iconPath": "image/calendarN.png",
+        "selectedIconPath": "image/calendarS.png"
+      },	
+      {
+        "pagePath": "pages/diagnose/diagnose",
+        "text": "诊股",
+        "iconPath": "image/diagnoseN.png",
+        "selectedIconPath": "image/diagnoseS.png"
+      },
+      {
+        "pagePath": "pages/licaishi/licaishi",
+        "text": "理财师",
+        "iconPath": "image/licaishiN.png",
+        "selectedIconPath": "image/licaishiS.png"
+      },
+      {
+        "pagePath": "pages/patres/patres",
+        "text": "长老院",
+        "iconPath": "image/patresN.png",
+        "selectedIconPath": "image/patresS.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#09bb07",
+    "navigationBarTextStyle": "white"
+  }
+}

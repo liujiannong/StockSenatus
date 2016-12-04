@@ -1,0 +1,55 @@
+.stockinfo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputStock{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px; 
+    font-size: 14pt;  
+}
+.awards{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px; 
+    font-size: 17pt;  
+}
+.awardsTitle{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px; 
+    font-size: 17pt;
+    background-color:rgba(9, 187, 7, 0.2);  
+    color:red;  
+    height:25pt;
+    line-height:25pt;  
+    border-style: outset;
+    border-width: 1px;       
+}
+
+.HSStockInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+.HSStockTitle{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25px; 
+    font-size: 17pt;
+    background-color:rgba(9, 187, 7, 0.2);  
+    color:red;  
+    height:25pt;
+    line-height:25pt;  
+    border-style: outset;
+    border-width: 1px;        
+}
